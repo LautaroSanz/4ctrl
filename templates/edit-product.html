@@ -1,0 +1,7 @@
+<form action="/edit/{{ product.id }}" method="POST">  <!-- Corregido para usar {{ product.id }} -->
+    <input type="text" name="nombre" placeholder="Nombre" value="{{ product.nombre }}">  <!-- Corregido para usar {{ product.nombre }} -->
+    <input type="text" name="marca" placeholder="Marca" value="{{ product.marca }}">  <!-- Corregido para usar {{ product.marca }} -->
+    <input type="text" name="precio" placeholder="Precio" value="{{ product.precio }}">  <!-- Corregido para usar {{ product.precio }} -->
+
+    <button type="submit">Guardar</button>
+</form>
